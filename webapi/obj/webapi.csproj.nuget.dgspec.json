@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iustin\\Desktop\\DAW\\webapi\\webapi.csproj": {}
+    "C:\\Users\\Iustin\\Desktop\\DAW-Examen\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iustin\\Desktop\\DAW\\webapi\\webapi.csproj": {
+    "C:\\Users\\Iustin\\Desktop\\DAW-Examen\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iustin\\Desktop\\DAW\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\Iustin\\Desktop\\DAW-Examen\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Iustin\\Desktop\\DAW\\webapi\\webapi.csproj",
+        "projectPath": "C:\\Users\\Iustin\\Desktop\\DAW-Examen\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Users\\Iustin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iustin\\Desktop\\DAW\\webapi\\obj\\",
+        "outputPath": "C:\\Users\\Iustin\\Desktop\\DAW-Examen\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iustin\\AppData\\Roaming\\NuGet\\NuGet.Config",
