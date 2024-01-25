@@ -21,7 +21,7 @@ namespace webapi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("webapi.Models.TestModel", b =>
+            modelBuilder.Entity("webapi.Models.Client", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,13 +29,77 @@ namespace webapi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("IdComenzi")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nume")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TestModels");
+                    b.ToTable("Clienti");
+                });
+
+            modelBuilder.Entity("webapi.Models.Comanda", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClientObjId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdClient")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IdProduse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientObjId");
+
+                    b.ToTable("Comenzi");
+                });
+
+            modelBuilder.Entity("webapi.Models.Produs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Denumire")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Pret")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Produse");
+                });
+
+            modelBuilder.Entity("webapi.Models.Comanda", b =>
+                {
+                    b.HasOne("webapi.Models.Client", "ClientObj")
+                        .WithMany("Comenzi")
+                        .HasForeignKey("ClientObjId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ClientObj");
+                });
+
+            modelBuilder.Entity("webapi.Models.Client", b =>
+                {
+                    b.Navigation("Comenzi");
                 });
 #pragma warning restore 612, 618
         }

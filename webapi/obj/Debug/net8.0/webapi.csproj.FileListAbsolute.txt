@@ -276,3 +276,7 @@ C:\Users\Iustin\Desktop\DAW-Examen\webapi\obj\Debug\net8.0\refint\webapi.dll
 C:\Users\Iustin\Desktop\DAW-Examen\webapi\obj\Debug\net8.0\webapi.pdb
 C:\Users\Iustin\Desktop\DAW-Examen\webapi\obj\Debug\net8.0\webapi.genruntimeconfig.cache
 C:\Users\Iustin\Desktop\DAW-Examen\webapi\obj\Debug\net8.0\ref\webapi.dll
+C:\Users\Iustin\Desktop\DAW-Examen\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Iustin\Desktop\DAW-Examen\webapi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Iustin\Desktop\DAW-Examen\webapi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Iustin\Desktop\DAW-Examen\webapi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

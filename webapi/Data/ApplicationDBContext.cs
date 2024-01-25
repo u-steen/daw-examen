@@ -7,8 +7,8 @@ public class ApplicationDBContext : DbContext
 {
     public ApplicationDBContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
     {
-
     }
-    // AICI PUNEM TABELELE
-    public DbSet<TestModel>TestModels{get;set;}
+    public DbSet<Produs>Produse{get;set;}
+    public DbSet<Comanda>Comenzi{get;set;}
+    public DbSet<Client>Clienti{get;set;}
 }
